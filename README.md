@@ -58,7 +58,7 @@ A good percentage of swap focused dApps are built for crypto native users and fa
   Design Documents
 </h4>
 
-> 📜 Design Documents coming soon.
+> 📜 Design Documents live in /design-concepts folder.
 
 <h4>
 >  Fee Model
