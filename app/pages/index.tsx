@@ -1,9 +1,14 @@
 import type { NextPage } from "next";
+import bs58 from "bs58";
+import fetch from "node-fetch";
 import Head from "next/head";
 import Image from "next/image";
+import { Connection, PublicKey, Keypair } from "@solana/web3.js";
+import { Jupiter, RouteInfo, TOKEN_LIST_URL } from "@jup-ag/core";
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { useWallet } from "@solana/wallet-adapter-react";
 
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
@@ -28,6 +33,14 @@ const ThemeChanger = () => {
 };
 
 const Home: NextPage = () => {
+  const wallet = useWallet();
+
+  const [connected, setConnected] = useState(false);
+
+  useEffect(() => {
+    setConnected(wallet.connected);
+  }, [wallet]);
+
   return (
     <>
       <Head>
@@ -38,6 +51,9 @@ const Home: NextPage = () => {
       <div>
         <main>
           <h1>Connect your wallet to use Swaps.so 🪐❤️🐇</h1>
+          <h2>
+            {connected ? "Wallet is connected." : "Wallet is not connected"}
+          </h2>
           <div>
             <ThemeChanger />
           </div>
