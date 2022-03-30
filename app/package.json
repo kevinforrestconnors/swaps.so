@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@jup-ag/core": "^1.0.0-beta.19",
+    "@jup-ag/react-hook": "^1.0.0-beta.19",
     "@solana/wallet-adapter-base": "^0.9.5",
     "@solana/wallet-adapter-react": "^0.15.4",
     "@solana/wallet-adapter-react-ui": "^0.9.6",
     "@solana/wallet-adapter-wallets": "^0.15.5",
+    "@solana/spl-token": "^0.2.0-alpha.1",
+    "@solana/buffer-layout": "^4.0.0",
     "@solana/web3.js": "^1.37.0",
     "next": "12.1.2",
     "next-themes": "^0.1.1",
-    "node-fetch": "^3.2.3",
     "react": "^18.0.0",
     "react-dom": "18.0.0"
   },
