@@ -45,7 +45,7 @@ A good percentage of swap focused dApps are built for crypto native users and fa
 
 <p>
   <ul>
-    <li>Produce Wireframes, UI Designs in Adobe XD 🟠 <i>Underway by Nico</i></li> 
+    <li>Produce Wireframes, UI Designs in Adobe XD 🟢 <i>Completed by Nico</i></li> 
     <li>Responsive Page Frame (Logo - Wallet Connect - Docs - Footer) 🔴</li>
     <li>Build Traditional Swap UI Centered (Input - Ouput - Swap Now) 🔴</li>
     <li>Link Traditional Swap to jup.ag API (frontend JS) 🔴</li>
